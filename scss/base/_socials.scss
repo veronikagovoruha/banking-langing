@@ -1,7 +1,25 @@
+.social__link{
+  display: flex;
+  align-items: center;
+}
+
 .social__list{
   display: flex;
 }
 
 .social__item:not(:last-child){
   padding-right: 16px;
+}
+
+.social-tel{
+  padding-right: 10px;
+}
+
+.social__text{
+  font-family: var(--btn-font);
+  @include fonts(normal, 600, 17px, 1.29);
+  color: var(--main-txt-cl);
+  padding-right: 18px;
+
+  border-right: 1px solid var(--form-txt-cl);
 }

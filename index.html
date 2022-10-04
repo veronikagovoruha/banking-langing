@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<div class="square"></div>
 <header class="header">
     <div class="header__container container">
         <a href=""><img class="header__logo" src="./image/logo.png" alt="logo"></a>
@@ -41,53 +42,61 @@
                 <h1 class="hero__title">Chase Your Dream with us</h1>
                 <p class="hero__main__text">The harder you work for something, the greater you’ll feel when you achieve it.</p>
                 <div class="btn__wrapper">
-                    <button class="hero__btn btn">Apply Online</button>
-                    <button class="hero__btn btn">Loan Caclulator</button>
+                    <button class="hero__btn hero__btn-apply">Apply Online</button>
+                    <button class="hero__btn hero__btn-loan">Loan Caclulator</button>
+                </div>
+
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__img social-tel" width="24" height="24">
+                                    <use href="./image/icons/icons.svg#icon-phone"></use>
+                                </svg>
+                                <p class="social__text">16519</p>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__img" width="24" height="24">
+                                    <use href="./image/socials/socials-icon.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__img" width="24" height="24">
+                                    <use href="./image/socials/socials-icon.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__img" width="24" height="24">
+                                    <use href="./image/socials/socials-icon.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <svg class="social__img" width="24" height="24">
+                                    <use href="./image/socials/socials-icon.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="social">
-                <div class="social__wrapper">
-                    <a href="">
-                        <svg class="social__tel" width="24" height="24">
-                            <use href="./image/socials/socials-icon.svg#icon-facebook"></use>
-                        </svg>
-                        <p class="social__text">16519</p>
-                    </a>
-                </div>
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__img" width="24" height="24">
-                                <use href="./image/socials/socials-icon.svg#icon-youtube"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__img" width="24" height="24">
-                                <use href="./image/socials/socials-icon.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__img" width="24" height="24">
-                                <use href="./image/socials/socials-icon.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="">
-                            <svg class="social__img" width="24" height="24">
-                                <use href="./image/icons/icons.svg#icon-phone"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
             <div class="hero__right">
+                <ul class="image__list">
+                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>
+                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
+                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
+                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
+                </ul>
                 <ul class="hero__list">
-                    <li class="hero__item">
+                    <li class="hero__item-car">
                         <a class="hero__link" href="">
                             <svg class="hero__img" width="24" height="24">
                                 <use href="./image/icons/icons.svg#icon-car"></use>
@@ -95,7 +104,7 @@
                             <p class="hero__text">Car Loans</p>
                         </a>
                     </li>
-                    <li class="hero__item">
+                    <li class="hero__item-house">
                         <a class="hero__link" href="">
                             <svg class="hero__img" width="24" height="24">
                                 <use href="./image/icons/icons.svg#icon-House"></use>
@@ -106,29 +115,29 @@
                 </ul>
             </div>
 
-            <div class="slider__wrapper">
-                <ul class="image__list">
-                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>
-                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
-                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
-                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
-                </ul>
+<!--            <div class="slider__wrapper">-->
+<!--&lt;!&ndash;                <ul class="image__list">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
 
-                <ul class="slider__list">
-                    <li class="slider__item">
-                        <button class="slider__btn"></button>
-                    </li>
-                    <li class="slider__item">
-                        <button class="slider__btn"></button>
-                    </li>
-                    <li class="slider__item">
-                        <button class="slider__btn"></button>
-                    </li>
-                    <li class="slider__item">
-                        <button class="slider__btn"></button>
-                    </li>
-                </ul>
-            </div>
+<!--                <ul class="slider__list">-->
+<!--                    <li class="slider__item">-->
+<!--                        <button class="slider__btn"></button>-->
+<!--                    </li>-->
+<!--                    <li class="slider__item">-->
+<!--                        <button class="slider__btn"></button>-->
+<!--                    </li>-->
+<!--                    <li class="slider__item">-->
+<!--                        <button class="slider__btn"></button>-->
+<!--                    </li>-->
+<!--                    <li class="slider__item">-->
+<!--                        <button class="slider__btn"></button>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
         </div>
     </section>
 
