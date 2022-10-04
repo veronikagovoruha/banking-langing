@@ -1,0 +1,7 @@
+.social__list{
+  display: flex;
+}
+
+.social__item:not(:last-child){
+  padding-right: 16px;
+}

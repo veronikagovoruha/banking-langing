@@ -1,0 +1,21 @@
+.partners{
+  background-color: var(--bg-color);
+}
+
+.partners__title{
+  font-family: var(--subtitle-font);
+  @include fonts(normal, 400, 23px, 1);
+  color: var(--title-txt-cl);
+  text-align: center;
+
+  margin-bottom: 88px;
+}
+
+.partners__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.partners__item:not(:last-child){
+  padding-right: 142px;
+}

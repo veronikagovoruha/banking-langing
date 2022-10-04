@@ -1,0 +1,50 @@
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  column-gap: 98px;
+}
+
+.company__title{
+  font-family: var(----btn-font);
+  @include fonts(normal, 600, 18px, 1.22);
+
+  color: var(--main-txt-cl);
+
+  padding-bottom: 20px;
+}
+
+.company__text, .products__link, .started__link,
+.about__link{
+  font-family: var(--medium-font);
+  @include fonts(normal, 400, 14px, 1.57);
+
+  color: var(--subtitle--txt-cl);
+  padding-bottom: 14px;
+}
+
+.company__text{
+  padding-bottom: 66px;
+}
+
+.products__item, .started__item,
+.about__item{
+  padding-top: 14px;
+}
+
+.mobile__wrapper{
+  display: flex;
+}
+
+.mobile__link{
+  font-family: var(--btn-font);
+  @include fonts(normal, 600, 17px, 1.29);
+  color: var(--main-txt-cl);
+
+  padding-left: 10px;
+}

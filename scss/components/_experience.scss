@@ -1,0 +1,41 @@
+.experience__main__text{
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.experience__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 76px;
+
+  column-gap: 64px;
+}
+
+.experience__item{
+  max-width: 260px;
+}
+
+.experience__item:last-child{
+  padding-right: 0;
+}
+
+.experience__img{
+  padding-top: 24px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+}
+
+.experience__subtitle{
+  font-family: var(--title-font);
+  @include fonts(normal, 700, 22px, 1);
+  color:  #363940;
+  padding-left: 24px;
+}
+
+.experience__text{
+  font-family: var(--subtitle-font);
+  @include fonts(normal, 400, 14px, 1.71);
+  color: var(--secondary-txt-cl);
+  max-width: 160px;
+  padding: 18px 75px 24px 24px;
+}

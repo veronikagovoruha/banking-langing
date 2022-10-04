@@ -1,0 +1,21 @@
+@import "fonts";
+
+//utils styles
+@import "utils/variables";
+@import "utils/mixins";
+
+
+//base styles
+@import "base/common";
+@import "base/container";
+@import "base/socials";
+
+//components
+@import "components/header";
+@import "components/experience";
+@import "components/partners";
+@import "components/idpc";
+@import "components/services";
+@import "components/results";
+@import "components/newsletter";
+@import "components/footer";

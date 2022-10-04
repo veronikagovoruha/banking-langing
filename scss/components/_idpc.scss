@@ -1,0 +1,33 @@
+.idpc__container{
+  display: flex;
+}
+
+.idpc__wrapper{
+  margin-top: 140px;
+  margin-left: 110px;
+}
+
+.idpc__title{
+  font-family: var(--title-font);
+  @include fonts(normal, 700, 32px, 1.18);
+  color: var(--title-txt-cl);
+  padding-bottom: 10px;
+}
+
+.idpc__text{
+  font-family: var(--subtitle-font);
+  @include fonts(normal, 400, 16px, 1.81);
+  color: var(--subtitle--txt-cl);
+  max-width: 460px;
+}
+
+.idpc__link{
+  display: flex;
+  align-items: center;
+
+  font-family: var(--subtitle--txt-cl);
+  @include fonts(normal, 400, 20, 1.35);
+  color: var(--btn-txt-cl);
+
+  margin-top: 44px;
+}

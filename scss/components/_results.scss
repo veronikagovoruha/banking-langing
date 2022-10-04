@@ -1,0 +1,25 @@
+.results__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  row-gap: 55px;
+  column-gap: 160px;
+
+  margin-top: 84px;
+}
+
+.results__item{
+
+}
+
+.results__subtitle{
+  font-family: var(--title-font);
+  @include fonts(normal, 700, 40px, 1.07);
+  color: var(--title-txt-cl);
+}
+
+.results__text{
+  font-family: var(--subtitle-font);
+  @include fonts(normal, 400, 16px, 1.56);
+  color: var(--subtitle--txt-cl);
+}

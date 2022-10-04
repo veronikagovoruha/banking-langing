@@ -1,0 +1,35 @@
+.services{
+  background-color: var(--bg-color);
+}
+
+.services__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+
+  margin-top: 64px;
+}
+
+.services__img{
+  width: 100%;
+}
+
+.services__link{
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.services__text{
+  max-width: 195px;
+  font-family: var(--btn-font);
+  @include fonts(normal, 600, 21px, 1.66);
+  color: #363940;
+  padding-right: 22px;
+  text-transform: uppercase;
+}
+
+.services__svg{
+  background-color: #FCE0EF;
+  border-radius: 50%;
+}

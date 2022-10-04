@@ -1,0 +1,24 @@
+:root{
+  /* fonts */
+  --hero-font: 'Metropolis-Black', sans-serif;
+  --title-font: 'Metropolis-Bold', sans-serif;
+  --subtitle-font: 'Metropolis-Regular', sans-serif;
+  --btn-font: 'Metropolis-SemiBold', sans-serif;
+  --medium-font: 'Metropolis-Medium', sans-serif;
+
+  /* text color */
+  --main-txt-cl: #010101;
+  --secondary-txt-cl: #999999;
+  --subtitle--txt-cl: #676767;
+  --title-txt-cl: #343434;
+  --btn-txt-cl: #ED017F;
+  --form-txt-cl: #CCCCCC;
+
+  /* bg colors */
+  --hero-bg-color: #FFEAF5;
+  --bg-color: rgba(252, 224, 239, 0.2);
+  --form-bg-color: #ffffff;
+
+  --transition-fast: 300ms ease-in-out;
+  --transition-slow: 600ms ease-in-out;
+}
