@@ -46,6 +46,9 @@
 
 .newsletter__btn:hover,
 .newsletter__btn:focus{
-  opacity: .8;
+  color: var(--btn-txt-cl);
+  background-color: #ffffff;
+  border: 1px solid var(--btn-txt-cl);
+  //opacity: .8;
   transition: var(--transition-fast);
 }

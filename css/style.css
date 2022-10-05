@@ -241,6 +241,7 @@ ul {
 .header_btn:focus {
   color: var(--btn-txt-cl);
   background-color: #ffffff;
+  transition: var(--transition-fast);
 }
 
 .hero {
@@ -363,6 +364,7 @@ ul {
 
 .hero__link {
   display: flex;
+  align-items: center;
   background-color: var(--form-bg-color);
   box-shadow: 4px 4px 58px rgba(0, 0, 0, 0.12);
   border-radius: 55px;
@@ -636,7 +638,9 @@ ul {
 
 .newsletter__btn:hover,
 .newsletter__btn:focus {
-  opacity: 0.8;
+  color: var(--btn-txt-cl);
+  background-color: #ffffff;
+  border: 1px solid var(--btn-txt-cl);
   transition: var(--transition-fast);
 }
 

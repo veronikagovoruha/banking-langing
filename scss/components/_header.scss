@@ -64,4 +64,5 @@
 .header_btn:focus{
   color: var(--btn-txt-cl);
   background-color: #ffffff;
+  transition: var(--transition-fast);
 }
