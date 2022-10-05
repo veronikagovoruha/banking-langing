@@ -23,3 +23,8 @@
 
   border-right: 1px solid var(--form-txt-cl);
 }
+
+.social__text:hover,
+.social__text:focus{
+  opacity: .6;
+}

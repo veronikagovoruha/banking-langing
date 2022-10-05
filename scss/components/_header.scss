@@ -43,8 +43,19 @@
   @include fonts(normal, 500, 12px, 1.66);
   padding: 8px 20px;
   color: #ffffff;
-  border: none;
+
   border-radius: 4px;
   background-color: var(--btn-txt-cl);
   margin-left: 33px;
+  border: 1px solid var(--btn-txt-cl);
+
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+.header_btn:hover,
+.header_btn:focus{
+  color: var(--btn-txt-cl);
+  background-color: #ffffff;
 }

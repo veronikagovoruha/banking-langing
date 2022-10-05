@@ -1,4 +1,5 @@
 .partners{
+  display: flex;
   background-color: var(--bg-color);
 }
 
@@ -11,11 +12,18 @@
   margin-bottom: 88px;
 }
 
-.partners__list{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.slick-dots li button:before {
+  font-size: 8px;
+  color: var(--form-txt-cl);
 }
 
-.partners__item:not(:last-child){
-  padding-right: 142px;
+.slick-dots li.slick-active button:before{
+  font-size: 13px;
+  color: #F467B2;
+
+  box-shadow: 4px 4px 58px rgba(0, 0, 0, 0.12);
+}
+
+.slick-track{
+  margin-bottom: 65px;
 }

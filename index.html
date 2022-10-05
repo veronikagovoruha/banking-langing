@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Banking</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -91,10 +93,11 @@
             <div class="hero__right">
                 <ul class="image__list">
                     <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>
-                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
-                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
-                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>
+<!--                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>-->
+<!--                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>-->
+<!--                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>-->
                 </ul>
+
                 <ul class="hero__list">
                     <li class="hero__item-car">
                         <a class="hero__link" href="">
@@ -114,30 +117,6 @@
                     </li>
                 </ul>
             </div>
-
-<!--            <div class="slider__wrapper">-->
-<!--&lt;!&ndash;                <ul class="image__list">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <li class="image__item"><img class="slider__image" src="#" alt=""></li>&ndash;&gt;-->
-<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
-
-<!--                <ul class="slider__list">-->
-<!--                    <li class="slider__item">-->
-<!--                        <button class="slider__btn"></button>-->
-<!--                    </li>-->
-<!--                    <li class="slider__item">-->
-<!--                        <button class="slider__btn"></button>-->
-<!--                    </li>-->
-<!--                    <li class="slider__item">-->
-<!--                        <button class="slider__btn"></button>-->
-<!--                    </li>-->
-<!--                    <li class="slider__item">-->
-<!--                        <button class="slider__btn"></button>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
         </div>
     </section>
 
@@ -210,25 +189,30 @@
     <section class="partners section">
         <div class="partners__container container">
             <h2 class="partners__title">BUSINESS PARTNERS</h2>
-            <ul class="partners__list">
-                <li class="partners__item"><img class="partners__img" src="./image/partners/partners-1.png" alt=""></li>
-                <li class="partners__item"><img class="partners__img" src="./image/partners/partners-2.png" alt=""></li>
-                <li class="partners__item"><img class="partners__img" src="./image/partners/partners-3.png" alt=""></li>
-                <li class="partners__item"><img class="partners__img" src="./image/partners/partners-4.png" alt=""></li>
-
-            </ul>
-            <ul class="button__list">
-                <li class="button__item">
-                    <button class="partners__btn"></button>
+            <ul class="partners__list slider__list">
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-1.png" alt="">
                 </li>
-                <li class="button__item">
-                    <button class="partners__btn"></button>
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-2.png" alt="">
                 </li>
-                <li class="button__item">
-                    <button class="partners__btn"></button>
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-3.png" alt="">
                 </li>
-                <li class="button__item">
-                    <button class="partners__btn"></button>
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-4.png" alt="">
+                </li>
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-1.png" alt="">
+                </li>
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-2.png" alt="">
+                </li>
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-3.png" alt="">
+                </li>
+                <li class="partners__item slider__item">
+                    <img class="partners__img" src="./image/partners/partners-4.png" alt="">
                 </li>
             </ul>
         </div>
@@ -428,6 +412,15 @@
         </div>
     </div>
 </footer>
+
+<!--<script-->
+<!--        src="https://code.jquery.com/jquery-3.6.1.min.js"-->
+<!--        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="-->
+<!--        crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
