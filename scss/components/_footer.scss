@@ -48,3 +48,12 @@
 
   padding-left: 10px;
 }
+
+
+.footer__link:hover,
+.footer__link:focus,
+.mobile__link:focus,
+.mobile__link:hover{
+  opacity: .6;
+  transition: var(--transition-fast);
+}

@@ -38,6 +38,12 @@
   cursor: pointer;
 }
 
+.header__img:hover,
+.header__img:focus{
+  opacity: .6;
+  transition: var(--transition-fast);
+}
+
 .header_btn{
   font-family: var(--medium-font);
   @include fonts(normal, 500, 12px, 1.66);

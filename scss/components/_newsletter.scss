@@ -26,6 +26,13 @@
   padding-bottom: 12px;
 }
 
+.newsletter__input:hover,
+.newsletter__input:focus{
+  outline: none;
+  border: 1px solid var(--btn-txt-cl);
+  transition: var(--transition-fast);
+}
+
 .newsletter__btn{
   font-family: var(--btn-font);
   @include fonts(normal, 600, 12px, 1.66);
@@ -35,4 +42,10 @@
   background-color: var(--btn-txt-cl);
   border: none;
   border-radius: 4px;
+}
+
+.newsletter__btn:hover,
+.newsletter__btn:focus{
+  opacity: .8;
+  transition: var(--transition-fast);
 }

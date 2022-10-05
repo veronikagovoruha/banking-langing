@@ -14,6 +14,12 @@
   width: 100%;
 }
 
+.services__img:hover,
+.services__img:focus{
+  transform: scale(1.1, 1.1);
+  transition: var(--transition-fast);
+}
+
 .services__link{
   display: flex;
   align-items: center;
@@ -29,7 +35,19 @@
   text-transform: uppercase;
 }
 
+.services__text:hover,
+.services__text:focus{
+  opacity: .8;
+  transition: var(--transition-fast);
+}
+
 .services__svg{
   background-color: #FCE0EF;
   border-radius: 50%;
+}
+
+.services__svg:hover,
+.services__svg:focus{
+  transform: translate(2px, 0);
+  transition: var(--transition-fast);
 }

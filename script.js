@@ -7,12 +7,12 @@ $(function (){
         slidesToScroll: 2,
     });
 
-    $('.image__list').slick({
-        arrow: false,
-        dots: true,
-        speed: 1000,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    })
+    // $('.image__list').slick({
+    //     arrow: false,
+    //     dots: true,
+    //     speed: 1000,
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    // })
 })

@@ -31,3 +31,17 @@
 
   margin-top: 44px;
 }
+
+.idpc__link:hover,
+.idpc__link:focus{
+  transform: translate(2px, 0);
+  transition: var(--transition-fast);
+}
+
+
+//.link__text:hover::after, {
+//  content: '';
+//  height: 1px;
+//  width: 5px;
+//  background-color: #ED017F;
+//}
