@@ -68,3 +68,25 @@ ul{
   background-color: var(--hero-bg-color);
   left: 50%;
 }
+
+@media only screen and (max-width: 834px){
+  .square {
+    width: 85%;
+    left: 15%;
+  }
+
+  .title{
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .square {
+    height: 310px;
+  }
+
+  .title{
+    @include fonts(normal, 700, 28px, 1.25);
+    margin-bottom: 8px;
+  }
+}

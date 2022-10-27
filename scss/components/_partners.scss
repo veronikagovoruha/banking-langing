@@ -1,6 +1,9 @@
 .partners{
   display: flex;
   background-color: var(--bg-color);
+
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .partners__title{
@@ -26,4 +29,26 @@
 
 .slick-track{
   margin-bottom: 65px;
+}
+
+@media only screen and (max-width: 834px){
+  .partners{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .partners__title{
+    margin-bottom: 32px;
+  }
+
+  .slick-track{
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .partners{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

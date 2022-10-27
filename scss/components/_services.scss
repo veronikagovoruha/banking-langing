@@ -2,12 +2,15 @@
   background-color: var(--bg-color);
 }
 
+.services__wrapper{
+  margin-top: 64px;
+}
+
 .services__list{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(158px, 254px));
   column-gap: 50px;
-
-  margin-top: 64px;
+  //margin-left: 105px;
 }
 
 .services__img{
@@ -50,4 +53,15 @@
 .services__svg:focus{
   transform: translate(2px, 0);
   transition: var(--transition-fast);
+}
+
+
+@media only screen and (max-width: 834px){
+  .services__list{
+    column-gap: 40px;
+  }
+
+  .services__wrapper{
+    margin-top: 54px;
+  }
 }

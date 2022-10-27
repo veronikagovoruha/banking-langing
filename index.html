@@ -15,7 +15,10 @@
 <div class="square"></div>
 <header class="header">
     <div class="header__container container">
-        <a href=""><img class="header__logo" src="./image/logo.png" alt="logo"></a>
+        <div class="header__burger">
+            <span></span>
+        </div>
+        <a class="header__logo-link" href=""><img class="header__logo" src="./image/logo.png" alt="logo"></a>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="">Retail</a></li>
@@ -48,7 +51,7 @@
                     <button class="hero__btn hero__btn-loan">Loan Caclulator</button>
                 </div>
 
-                <div class="social">
+                <div class="social hero__social">
                     <ul class="social__list">
                         <li class="social__item">
                             <a class="social__link" href="">
@@ -91,12 +94,42 @@
             </div>
 
             <div class="hero__right">
-                <ul class="image__list">
-                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt="family"></li>
-<!--                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>-->
-<!--                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>-->
-<!--                    <li class="image__item"><img class="slider__image" src="./image/hero.png" alt=""></li>-->
-                </ul>
+                <div class="image__list__wrapper">
+                    <ul class="image__list">
+                        <li class="image__item">
+                            <picture>
+                                <source srcset="./image/hero.png" media="(min-width: 1440px)">
+                                <source srcset="./image/hero-tablet.png" media="(min-width: 834px)">
+                                <source srcset="./image/hero-mobile.png" media="(min-width: 375px)">
+                                <img class="slider__image" src="./image/hero.png" alt="family">
+                            </picture>
+                        </li>
+                        <li class="image__item">
+                            <picture>
+                                <source srcset="./image/hero.png" media="(min-width: 1440px)">
+                                <source srcset="./image/hero-tablet.png" media="(min-width: 834px)">
+                                <source srcset="./image/hero-mobile.png" media="(min-width: 375px)">
+                                <img class="slider__image" src="./image/hero.png" alt="family">
+                            </picture>
+                        </li>
+                        <li class="image__item">
+                            <picture>
+                                <source srcset="./image/hero.png" media="(min-width: 1440px)">
+                                <source srcset="./image/hero-tablet.png" media="(min-width: 834px)">
+                                <source srcset="./image/hero-mobile.png" media="(min-width: 375px)">
+                                <img class="slider__image" src="./image/hero.png" alt="family">
+                            </picture>
+                        </li>
+                        <li class="image__item">
+                            <picture>
+                                <source srcset="./image/hero.png" media="(min-width: 1440px)">
+                                <source srcset="./image/hero-tablet.png" media="(min-width: 834px)">
+                                <source srcset="./image/hero-mobile.png" media="(min-width: 375px)">
+                                <img class="slider__image" src="./image/hero.png" alt="family">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
 
                 <ul class="hero__list">
                     <li class="hero__item-car">
@@ -120,7 +153,7 @@
         </div>
     </section>
 
-    <section class="experience section">
+    <section class="experience">
         <div class="experience__container container">
             <h2 class="experience__title title">Creating Extraordinary Customer Experience</h2>
             <p class="experience__main__text subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum eget morbi dignissim eu
@@ -186,7 +219,7 @@
         </div>
     </section>
 
-    <section class="partners section">
+    <section class="partners">
         <div class="partners__container container">
             <h2 class="partners__title">BUSINESS PARTNERS</h2>
             <ul class="partners__list slider__list">
@@ -219,24 +252,32 @@
     </section>
 
     <section class="idpc">
-        <div class="idpc__container container">
-            <img class="idpc__img" src="./image/ipcd.jpg" width="618" height="610" alt="Tree with money">
+        <div class="idpc__container ">
             <div class="idpc__wrapper">
-                <h2 class="idpc__title">IPDC AT A GLANCE</h2>
-                <p class="idpc__text">IPDC Finance Limited (previously known as "Industrial Promotion
-                    and Development Company of Bangladesh Limited") is the first private
-                    sector financial institution of the country established in 1981 by a
-                    distinguished group of shareholders namely International Finance Corporation
-                    (IFC), USA, German Investment and Development Company (DEG), Germany, The Aga
-                    Khan Fund for Economic Development (AKFED), Switzerland, Commonwealth Development
-                    Corporation (CDC), UK and the Government of Bangladesh</p>
-                <a class="idpc__link" href="">
-                    <p class="link__text">Read More</p>
-                    <svg class="link__img" width="29" height="29">
-                        <use href="./image/icons/icons.svg#icon-arrow"></use>
-                    </svg>
-                </a>
+                <picture>
+                    <source srcset="./image/ipcd.jpg" media="(min-width: 1440px)">
+                    <source srcset="./image/ipcd-tablet.jpg" media="(min-width: 834px)">
+                    <source srcset="./image/ipcd-mobile.jpg" media="(min-width: 375px)">
+                    <img class="idpc__img" src="./image/ipcd.jpg" alt="Tree with money">
+                </picture>
+                <div class="idpc__wrapper-text">
+                    <h2 class="idpc__title">IPDC AT A GLANCE</h2>
+                    <p class="idpc__text">IPDC Finance Limited (previously known as "Industrial Promotion
+                        and Development Company of Bangladesh Limited") is the first private
+                        sector financial institution of the country established in 1981 by a
+                        distinguished group of shareholders namely International Finance Corporation
+                        (IFC), USA, German Investment and Development Company (DEG), Germany, The Aga
+                        Khan Fund for Economic Development (AKFED), Switzerland, Commonwealth Development
+                        Corporation (CDC), UK and the Government of Bangladesh</p>
+                    <a class="idpc__link" href="">
+                        <p class="link__text">Read More</p>
+                        <svg class="link__img" width="29" height="29">
+                            <use href="./image/icons/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -245,173 +286,175 @@
             <h2 class="services__title title">Our Services</h2>
             <p class="services__main__text subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Diam, dapibus mattis vel feugiat erat tortor eleifend.</p>
-            <ul class="services__list">
-                <li class="services__item">
-                    <img class="services__img" width="254" height="365" src="./image/services/services-1.jpg" alt="IPDC Saving Schemes">
-                    <a class="services__link" href="">
-                        <p class="services__text">IPDC SAVING SCHEMES</p>
-                        <svg class="services__svg" width="29" height="29">
-                            <use href="./image/icons/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="services__item">
-                    <img class="services__img" width="254" height="365" src="./image/services/services-2.jpg" alt="IPDC Personal Loan">
-                    <a class="services__link" href="">
-                        <p class="services__text">IPDC Personal loan</p>
-                        <svg class="services__svg" width="29" height="29">
-                            <use href="./image/icons/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="services__item">
-                    <img class="services__img" width="254" height="365" src="./image/services/services-3.jpg" alt="IPDC Deposit Schemes">
-                    <a class="services__link" href="">
-                        <p class="services__text">IPDC Deposit schemes</p>
-                        <svg class="services__svg" width="29" height="29">
-                            <use href="./image/icons/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="services__item">
-                    <img class="services__img" width="254" height="365" src="./image/services/services-4.jpg" alt="IPDC Auto Loan">
-                    <a class="services__link" href="">
-                        <p class="services__text">IPDC auto
-                            loan</p>
-                        <svg class="services__svg" width="29" height="29">
-                            <use href="./image/icons/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="services__wrapper">
+                <ul class="services__list">
+                    <li class="services__item">
+                        <img class="services__img" width="254" height="365" src="./image/services/services-1.jpg" alt="IPDC Saving Schemes">
+                        <a class="services__link" href="">
+                            <p class="services__text">IPDC SAVING SCHEMES</p>
+                            <svg class="services__svg" width="29" height="29">
+                                <use href="./image/icons/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__img" width="254" height="365" src="./image/services/services-2.jpg" alt="IPDC Personal Loan">
+                        <a class="services__link" href="">
+                            <p class="services__text">IPDC Personal loan</p>
+                            <svg class="services__svg" width="29" height="29">
+                                <use href="./image/icons/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__img" width="254" height="365" src="./image/services/services-3.jpg" alt="IPDC Deposit Schemes">
+                        <a class="services__link" href="">
+                            <p class="services__text">IPDC Deposit schemes</p>
+                            <svg class="services__svg" width="29" height="29">
+                                <use href="./image/icons/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__img" width="254" height="365" src="./image/services/services-4.jpg" alt="IPDC Auto Loan">
+                        <a class="services__link" href="">
+                            <p class="services__text">IPDC auto
+                                loan</p>
+                            <svg class="services__svg" width="29" height="29">
+                                <use href="./image/icons/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section class="results section">
-        <div class="results__container container">
-            <h2 class="results__title title">Our best results for the year</h2>
-            <p class="results__main__text subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.</p>
-            <ul class="results__list">
-                <li class="results__item">
-                    <h3 class="results__subtitle">57.6 bn</h3>
-                    <p class="results__text">LOAN PORTFOLIO</p>
-                </li>
-                <li class="results__item">
-                    <h3 class="results__subtitle">0.95%</h3>
-                    <p class="results__text">CLASSIFIED LOAN PORTFOLIO</p>
-                </li>
-                <li class="results__item">
-                    <h3 class="results__subtitle">388.5%</h3>
-                    <p class="results__text">CLASSIFIED LOAN Coverage</p>
-                </li>
-                <li class="results__item">
-                    <h3 class="results__subtitle">50.4 bn</h3>
-                    <p class="results__text">Deposit</p>
-                </li>
-                <li class="results__item">
-                    <h3 class="results__subtitle">6.1 bn</h3>
-                    <p class="results__text">Shareholders equity</p>
-                </li>
-                <li class="results__item">
-                    <h3 class="results__subtitle">18.51%</h3>
-                    <p class="results__text">Capital Adequacy Ratio</p>
-                </li>
-                <li class="results__item">
-                    <h3 class="results__subtitle">8.5 bn</h3>
-                    <p class="results__text">Market Capitalization</p>
-                </li>
-                <li class="results__item">
-                    <h3 class="results__subtitle">AAA</h3>
-                    <p class="results__text">Credit Rating</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+<!--    <section class="results section">-->
+<!--        <div class="results__container container">-->
+<!--            <h2 class="results__title title">Our best results for the year</h2>-->
+<!--            <p class="results__main__text subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.</p>-->
+<!--            <ul class="results__list">-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">57.6 bn</h3>-->
+<!--                    <p class="results__text">LOAN PORTFOLIO</p>-->
+<!--                </li>-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">0.95%</h3>-->
+<!--                    <p class="results__text">CLASSIFIED LOAN PORTFOLIO</p>-->
+<!--                </li>-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">388.5%</h3>-->
+<!--                    <p class="results__text">CLASSIFIED LOAN Coverage</p>-->
+<!--                </li>-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">50.4 bn</h3>-->
+<!--                    <p class="results__text">Deposit</p>-->
+<!--                </li>-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">6.1 bn</h3>-->
+<!--                    <p class="results__text">Shareholders equity</p>-->
+<!--                </li>-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">18.51%</h3>-->
+<!--                    <p class="results__text">Capital Adequacy Ratio</p>-->
+<!--                </li>-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">8.5 bn</h3>-->
+<!--                    <p class="results__text">Market Capitalization</p>-->
+<!--                </li>-->
+<!--                <li class="results__item">-->
+<!--                    <h3 class="results__subtitle">AAA</h3>-->
+<!--                    <p class="results__text">Credit Rating</p>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <section class="newsletter section">
-        <div class="newsletter__container container">
-            <h2 class="newsletter__title title">Newsletter</h2>
-            <p class="newsletter__text subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac quis aliquam arcu lacus.</p>
-            <form class="newsletter__form">
-                <input class="newsletter__input" type="text">
-                <button class="newsletter__btn">Subscribe</button>
-            </form>
-        </div>
-    </section>
+<!--    <section class="newsletter section">-->
+<!--        <div class="newsletter__container container">-->
+<!--            <h2 class="newsletter__title title">Newsletter</h2>-->
+<!--            <p class="newsletter__text subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac quis aliquam arcu lacus.</p>-->
+<!--            <form class="newsletter__form">-->
+<!--                <input class="newsletter__input" type="text">-->
+<!--                <button class="newsletter__btn">Subscribe</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </section>-->
 </main>
 
-<footer class="footer">
-    <div class="footer__container container">
-        <div class="company">
-            <h2 class="company__title">About the company</h2>
-            <p class="company__text">Learn To Love Growth And Change And You Will Be A Success. Microsoft Patch </p>
-            <ul class="social__list">
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg class="social__img" width="24" height="24">
-                            <use href="./image/socials/socials-icon.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg class="social__img" width="24" height="24">
-                            <use href="./image/socials/socials-icon.svg#icon-youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg class="social__img" width="24" height="24">
-                            <use href="./image/socials/socials-icon.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="">
-                        <svg class="social__img" width="24" height="24">
-                            <use href="./image/socials/socials-icon.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+<!--<footer class="footer">-->
+<!--    <div class="footer__container container">-->
+<!--        <div class="company">-->
+<!--            <h2 class="company__title">About the company</h2>-->
+<!--            <p class="company__text">Learn To Love Growth And Change And You Will Be A Success. Microsoft Patch </p>-->
+<!--            <ul class="social__list">-->
+<!--                <li class="social__item">-->
+<!--                    <a class="social__link" href="">-->
+<!--                        <svg class="social__img" width="24" height="24">-->
+<!--                            <use href="./image/socials/socials-icon.svg#icon-facebook"></use>-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="social__item">-->
+<!--                    <a class="social__link" href="">-->
+<!--                        <svg class="social__img" width="24" height="24">-->
+<!--                            <use href="./image/socials/socials-icon.svg#icon-youtube"></use>-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="social__item">-->
+<!--                    <a class="social__link" href="">-->
+<!--                        <svg class="social__img" width="24" height="24">-->
+<!--                            <use href="./image/socials/socials-icon.svg#icon-linkedin"></use>-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="social__item">-->
+<!--                    <a class="social__link" href="">-->
+<!--                        <svg class="social__img" width="24" height="24">-->
+<!--                            <use href="./image/socials/socials-icon.svg#icon-instagram"></use>-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
 
-        <ul class="products__list">
-            <li class="products__item-title"><h3 class="products__title company__title">Products</h3></li>
-            <li class="products__item"><a class="products__link footer__link" href="">CSR Activities</a></li>
-            <li class="products__item"><a class="products__link footer__link" href="">Green Banking</a></li>
-            <li class="products__item"><a class="products__link footer__link" href="">News</a></li>
-            <li class="products__item"><a class="products__link footer__link" href="">Ongoing Campgain</a></li>
-            <li class="products__item"><a class="products__link footer__link" href="">Updates</a></li>
-        </ul>
+<!--        <ul class="products__list">-->
+<!--            <li class="products__item-title"><h3 class="products__title company__title">Products</h3></li>-->
+<!--            <li class="products__item"><a class="products__link footer__link" href="">CSR Activities</a></li>-->
+<!--            <li class="products__item"><a class="products__link footer__link" href="">Green Banking</a></li>-->
+<!--            <li class="products__item"><a class="products__link footer__link" href="">News</a></li>-->
+<!--            <li class="products__item"><a class="products__link footer__link" href="">Ongoing Campgain</a></li>-->
+<!--            <li class="products__item"><a class="products__link footer__link" href="">Updates</a></li>-->
+<!--        </ul>-->
 
-        <ul class="started__list">
-            <li class="started__item-title"><h3 class="started__title company__title">Get Started</h3></li>
-            <li class="started__item"><a class="started__link footer__link" href="">Career</a></li>
-            <li class="started__item"><a class="started__link footer__link" href="">Contact Us</a></li>
-            <li class="started__item"><a class="started__link footer__link" href="">Government Securities</a></li>
-            <li class="started__item"><a class="started__link footer__link" href="">Examples</a></li>
-            <li class="started__item"><a class="started__link footer__link" href="">NIS</a></li>
-        </ul>
+<!--        <ul class="started__list">-->
+<!--            <li class="started__item-title"><h3 class="started__title company__title">Get Started</h3></li>-->
+<!--            <li class="started__item"><a class="started__link footer__link" href="">Career</a></li>-->
+<!--            <li class="started__item"><a class="started__link footer__link" href="">Contact Us</a></li>-->
+<!--            <li class="started__item"><a class="started__link footer__link" href="">Government Securities</a></li>-->
+<!--            <li class="started__item"><a class="started__link footer__link" href="">Examples</a></li>-->
+<!--            <li class="started__item"><a class="started__link footer__link" href="">NIS</a></li>-->
+<!--        </ul>-->
 
-        <ul class="about__list">
-            <li class="about__item-title"><h3 class="about__title company__title">About</h3></li>
-            <li class="about__item"><a class="about__link footer__link" href="">IPDC at a Glance</a></li>
-            <li class="about__item"><a class="about__link footer__link" href="">Mission, VIsion & Values</a></li>
-            <li class="about__item"><a class="about__link footer__link" href="">Corporate Governanace</a></li>
-            <li class="about__item"><a class="about__link footer__link" href="">Shareholders</a></li>
-            <li class="about__item"><a class="about__link footer__link" href="">Investor Relations</a></li>
-        </ul>
+<!--        <ul class="about__list">-->
+<!--            <li class="about__item-title"><h3 class="about__title company__title">About</h3></li>-->
+<!--            <li class="about__item"><a class="about__link footer__link" href="">IPDC at a Glance</a></li>-->
+<!--            <li class="about__item"><a class="about__link footer__link" href="">Mission, VIsion & Values</a></li>-->
+<!--            <li class="about__item"><a class="about__link footer__link" href="">Corporate Governanace</a></li>-->
+<!--            <li class="about__item"><a class="about__link footer__link" href="">Shareholders</a></li>-->
+<!--            <li class="about__item"><a class="about__link footer__link" href="">Investor Relations</a></li>-->
+<!--        </ul>-->
 
-        <div class="mobile__wrapper">
-            <svg class="mobile__img" width="24" height="24">
-                <use href="./image/icons/icons.svg#icon-phone"></use>
-            </svg>
-            <a class="mobile__link" href="">16519</a>
-        </div>
-    </div>
-</footer>
+<!--        <div class="mobile__wrapper">-->
+<!--            <svg class="mobile__img" width="24" height="24">-->
+<!--                <use href="./image/icons/icons.svg#icon-phone"></use>-->
+<!--            </svg>-->
+<!--            <a class="mobile__link" href="">16519</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <!--<script-->
 <!--        src="https://code.jquery.com/jquery-3.6.1.min.js"-->
