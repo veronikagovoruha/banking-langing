@@ -1,5 +1,7 @@
 .services{
   background-color: var(--bg-color);
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .services__wrapper{
@@ -10,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(158px, 254px));
   column-gap: 50px;
-  //margin-left: 105px;
+  justify-content: center;
 }
 
 .services__img{
@@ -57,11 +59,42 @@
 
 
 @media only screen and (max-width: 834px){
+  .services{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .services__list{
     column-gap: 40px;
   }
 
   .services__wrapper{
     margin-top: 54px;
+  }
+
+  .services__main__text{
+    width: 670px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .services{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .services__main__text {
+    width: 335px;
+  }
+
+  .services__wrapper {
+    margin-top: 25px;
+  }
+
+  .services__item{
+    margin-bottom: 6px;
+  }
+
+  .services__link {
+    margin-top: 14px;
   }
 }

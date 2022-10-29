@@ -1,5 +1,7 @@
 .newsletter{
   background-color: var(--bg-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .newsletter__text{
@@ -12,7 +14,7 @@
 }
 
 .newsletter__input{
-  min-width: 343px;
+  width: 343px;
   margin-right: 10px;
 
   color: var(--form-txt-cl);
@@ -51,4 +53,21 @@
   border: 1px solid var(--btn-txt-cl);
   //opacity: .8;
   transition: var(--transition-fast);
+}
+
+@media only screen and (max-width: 834px) {
+  .newsletter{
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .newsletter{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .newsletter__input{
+    width: 192px;
+  }
 }

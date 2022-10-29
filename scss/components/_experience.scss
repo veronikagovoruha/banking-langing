@@ -14,7 +14,7 @@
   grid-template-columns: repeat(auto-fit, minmax(158px, 260px));
   padding-top: 76px;
 
-  margin-left: 105px;
+  justify-content: center;
   column-gap: 65px;
 }
 
@@ -57,9 +57,6 @@
   .experience{
     padding-top: 70px;
     padding-bottom: 70px;
-  }
-  .experience__list{
-    margin-left: 80px;
   }
 
   .experience__list{

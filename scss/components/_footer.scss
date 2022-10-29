@@ -5,7 +5,8 @@
 
 .footer__container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  //grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(158px, 172px));
 
   column-gap: 98px;
 }
